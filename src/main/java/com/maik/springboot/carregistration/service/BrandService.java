@@ -8,4 +8,6 @@ public interface BrandService {
     
     List<Brand> getAllBrands();
 
+    List<Brand> findByName(String name);
+
 }
