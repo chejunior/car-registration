@@ -9,12 +9,12 @@ spec:
           valueFrom:
             secretKeyRef:
               name: baeldung-db
-              key: user07L
+              key: database-user
         - name: SPRING_DATASOURCE_PASSWORD
           valueFrom:
             secretKeyRef:
               name: baeldung-db
-              key: nrYdrS8JwbUoiyfg
+              key: database-password
         livenessProbe:
           httpGet:
             path: /actuator/health
